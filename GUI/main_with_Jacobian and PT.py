@@ -458,10 +458,10 @@ class PathandTrajWindow(RoboticProgram):
         conveyor_beltT1, conveyor_beltT2, conveyor_beltd3 = self.invKins(a1, a2, a3,  10, 0, 3)
         box1T1, box1T2, box1d3 = self.invKins(a1, a2, a3, -5*np.sin(np.pi/4), -5*np.cos(np.pi/4), 2)
         
-        conveyor_beltT1 = self.self.convert_to_radians(conveyor_beltT1)
-        conveyor_beltT2 = self.self.convert_to_radians(conveyor_beltT2)
-        box1T1 = self.self.convert_to_radians(box1T1)
-        box1T2 = self.self.convert_to_radians(box1T2)
+        conveyor_beltT1 = self.convert_to_radians(conveyor_beltT1)
+        conveyor_beltT2 = self.convert_to_radians(conveyor_beltT2)
+        box1T1 = self.convert_to_radians(box1T1)
+        box1T2 = self.convert_to_radians(box1T2)
 
         q0 = np.array([0, 0, 0])
         q1 = np.array([conveyor_beltT1, conveyor_beltT2, conveyor_beltd3])
