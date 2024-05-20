@@ -7,11 +7,7 @@ import numpy as np
 import roboticstoolbox as rtb
 from roboticstoolbox import SerialLink, RevoluteDH, PrismaticDH
 import matplotlib
-import matplotlib.pyplot as plt
 import sympy as syp
-from sympy.printing import latex
-from io import BytesIO as StringIO
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 matplotlib.use('TkAgg')
 class RoboticProgram(ttkb.Window):
@@ -174,11 +170,11 @@ class FkinWindow(Window):
         self.T1_dotdata = ttkb.Entry(JVV,width=5)
         cms1 = ttkb.Label(JVV, text = ("cm/s"))
         
-        T2_dot= ttkb.Label(JVV, text = ("Theta_1 = "))
+        T2_dot= ttkb.Label(JVV, text = ("Theta_2 = "))
         self.T2_dotdata = ttkb.Entry(JVV,width=5)
         cms2= ttkb.Label(JVV, text = ("cm/s"))
         
-        d3_dot= ttkb.Label(JVV, text = ("Theta_1 = "))
+        d3_dot= ttkb.Label(JVV, text = ("d_3 = "))
         self.d3_dotdata = ttkb.Entry(JVV,width=5)
         cms3 = ttkb.Label(JVV, text = ("cm/s"))
         
@@ -401,7 +397,7 @@ class FkinWindow(Window):
         
         singularity_and_jacobian = ttkb.Toplevel()
         singularity_and_jacobian.title("Jacobian Differential Equations and its Jacobian")
-        singularity_and_jacobian.geometry("650x300")
+        singularity_and_jacobian.geometry("850x300")
         
         s_j = ttkb.Labelframe(singularity_and_jacobian)
         s_j.grid(row = 0, column = 0)
@@ -532,14 +528,14 @@ class PathandTrajWindow(RoboticProgram):
     def __init__(self):
         
         self.windowTitle = ttkb.Toplevel(master = robot)
-        
+        self.windowTitle.geometry('300x300')
         PT = ttkb.LabelFrame(master=self.windowTitle, text = "Program Traj Functions")
-        PT.grid(row = 0, column = 0)
+        PT.place(x=0, y=0, width=300, height=300)
         
         pick_place = ttkb.Button(PT, text = "Pick and Place", command= self.pickPlace)
-        pick_place.grid(row=0, column=0)
+        pick_place.place(x=85, y=75)
         Welding = ttkb.Button(PT, text = "Welding" , command=self.welding)
-        Welding.grid(row=1, column=0)
+        Welding.place(x=110, y=125)
         
     def pickPlace(self):
         
