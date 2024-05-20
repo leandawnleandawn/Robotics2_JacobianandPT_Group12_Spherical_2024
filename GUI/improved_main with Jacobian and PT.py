@@ -551,8 +551,8 @@ class PathandTrajWindow(RoboticProgram):
         
         print(sphericalManipulator)
         
-        conveyor_beltT1, conveyor_beltT2, conveyor_beltd3 = self.invKins(a1, a2, a3,  10, 0, 3)
-        box1T1, box1T2, box1d3 = self.invKins(a1, a2, a3, -5*np.sin(np.pi/4), -5*np.cos(np.pi/4), 2)
+        conveyor_beltT1, conveyor_beltT2, conveyor_beltd3 = self.invKins(a1, a2, a3,  33, 0, 10)
+        box1T1, box1T2, box1d3 = self.invKins(a1, a2, a3, 25, 20, 0)
         
         conveyor_beltT1 = self.convert_to_radians(conveyor_beltT1)
         conveyor_beltT2 = self.convert_to_radians(conveyor_beltT2)
@@ -570,10 +570,10 @@ class PathandTrajWindow(RoboticProgram):
         traj4 = rtb.jtraj(q2, q0, t)
         
         while True:
-            sphericalManipulator.plot(traj1.s, limits = [-5, 30, -10, 10, 0, 30])
-            sphericalManipulator.plot(traj2.s, limits = [-5, 30, -10, 10, 0, 30])
-            sphericalManipulator.plot(traj3.s, limits = [-5, 30, -10, 10, 0, 30])
-            sphericalManipulator.plot(traj4.s, limits = [-5, 30, -10, 10, 0, 30])
+            sphericalManipulator.plot(traj1.s, limits = [-5, 30, -10, 25, 0, 30])
+            sphericalManipulator.plot(traj2.s, limits = [-5, 30, -10, 25, 0, 30])
+            sphericalManipulator.plot(traj3.s, limits = [-5, 30, -10, 25, 0, 30])
+            sphericalManipulator.plot(traj4.s, limits = [-5, 30, -10, 25, 0, 30])
     
     def welding(self):
         a1 = 20
@@ -588,10 +588,10 @@ class PathandTrajWindow(RoboticProgram):
         
         print(sphericalManipulator)
         
-        rectanglep1T1, rectanglep1T2, rectanglep1d3 = self.invKins(a1, a2, a3, -5, 5, 3)
-        rectanglep2T1, rectanglep2T2, rectanglep2d3 = self.invKins(a1, a2, a3,  5, 5, 3)
-        rectanglep3T1, rectanglep3T2, rectanglep3d3 = self.invKins(a1, a2, a3, 10, 5, 3)
-        rectanglep4T1, rectanglep4T2, rectanglep4d3 = self.invKins(a1, a2, a3, 10, -5, 3)
+        rectanglep1T1, rectanglep1T2, rectanglep1d3 = self.invKins(a1, a2, a3, 31, 5, 10)
+        rectanglep2T1, rectanglep2T2, rectanglep2d3 = self.invKins(a1, a2, a3, 33, 5, 10)
+        rectanglep3T1, rectanglep3T2, rectanglep3d3 = self.invKins(a1, a2, a3, 33, -5, 10)
+        rectanglep4T1, rectanglep4T2, rectanglep4d3 = self.invKins(a1, a2, a3, 31, -5, 10)
         
         rectanglep1T1 = self.convert_to_radians(rectanglep1T1)
         rectanglep1T2 = self.convert_to_radians(rectanglep1T2)
@@ -620,12 +620,12 @@ class PathandTrajWindow(RoboticProgram):
         print(traj1)
 
         while True:
-            sphericalManipulator.plot(traj1.s, limits = [-5, 30, -10, 10, 0, 30])
-            sphericalManipulator.plot(traj2.s, limits = [-5, 30, -10, 10, 0, 30])
-            sphericalManipulator.plot(traj3.s, limits = [-5, 30, -10, 10, 0, 30])
-            sphericalManipulator.plot(traj4.s, limits = [-5, 30, -10, 10, 0, 30])
-            sphericalManipulator.plot(traj5.s, limits = [-5, 30, -10, 10, 0, 30])
-            sphericalManipulator.plot(traj6.s, limits = [-5, 30, -10, 10, 0, 30])
+            sphericalManipulator.plot(traj1.s, limits = [-5, 30, -10, 30, 0, 30])
+            sphericalManipulator.plot(traj2.s, limits = [-5, 30, -10, 30, 0, 30])
+            sphericalManipulator.plot(traj3.s, limits = [-5, 30, -10, 30, 0, 30])
+            sphericalManipulator.plot(traj4.s, limits = [-5, 30, -10, 30, 0, 30])
+            sphericalManipulator.plot(traj5.s, limits = [-5, 30, -10, 30, 0, 30])
+            sphericalManipulator.plot(traj6.s, limits = [-5, 30, -10, 0, 0, 30])
             
     def invKins(self, a1, a2, a3,  x_03, y_03, z_03):
         s = z_03 - a1

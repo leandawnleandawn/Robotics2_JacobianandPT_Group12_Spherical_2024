@@ -35,10 +35,10 @@ def convert_to_meters(mm):
 def convert_to_radians(deg):
     return deg * (np.pi/180)
 
-rectanglep1T1, rectanglep1T2, rectanglep1d3 = invKins(a1, -5, 5, 3)
-rectanglep2T1, rectanglep2T2, rectanglep2d3 = invKins(a1, 5, 5, 3)
-rectanglep3T1, rectanglep3T2, rectanglep3d3 = invKins(a1, 10, 5, 3)
-rectanglep4T1, rectanglep4T2, rectanglep4d3 = invKins(a1, 10, -5, 3)
+rectanglep1T1, rectanglep1T2, rectanglep1d3 = invKins(a1, 31, 5, 10)
+rectanglep2T1, rectanglep2T2, rectanglep2d3 = invKins(a1, 33, 5, 10)
+rectanglep3T1, rectanglep3T2, rectanglep3d3 = invKins(a1, 33, -5, 10)
+rectanglep4T1, rectanglep4T2, rectanglep4d3 = invKins(a1, 31, -5, 10)
 
 
 rectanglep1T1 = convert_to_radians(rectanglep1T1)
