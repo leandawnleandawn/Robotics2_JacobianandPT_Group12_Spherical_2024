@@ -570,10 +570,10 @@ class PathandTrajWindow(RoboticProgram):
         traj4 = rtb.jtraj(q2, q0, t)
         
         while True:
-            sphericalManipulator.plot(traj1.s, limits = [-5, 30, -10, 25, 0, 30])
-            sphericalManipulator.plot(traj2.s, limits = [-5, 30, -10, 25, 0, 30])
-            sphericalManipulator.plot(traj3.s, limits = [-5, 30, -10, 25, 0, 30])
-            sphericalManipulator.plot(traj4.s, limits = [-5, 30, -10, 25, 0, 30])
+            sphericalManipulator.plot(traj1.s, limits = [-5, 30, -10, 10, 0, 30])
+            sphericalManipulator.plot(traj2.s, limits = [-5, 30, -10, 10, 0, 30])
+            sphericalManipulator.plot(traj3.s, limits = [-5, 30, -10, 10, 0, 30])
+            sphericalManipulator.plot(traj4.s, limits = [-5, 30, -10, 10, 0, 30])
     
     def welding(self):
         a1 = 20
@@ -620,12 +620,12 @@ class PathandTrajWindow(RoboticProgram):
         print(traj1)
 
         while True:
-            sphericalManipulator.plot(traj1.s, limits = [-5, 30, -10, 30, 0, 30])
-            sphericalManipulator.plot(traj2.s, limits = [-5, 30, -10, 30, 0, 30])
-            sphericalManipulator.plot(traj3.s, limits = [-5, 30, -10, 30, 0, 30])
-            sphericalManipulator.plot(traj4.s, limits = [-5, 30, -10, 30, 0, 30])
-            sphericalManipulator.plot(traj5.s, limits = [-5, 30, -10, 30, 0, 30])
-            sphericalManipulator.plot(traj6.s, limits = [-5, 30, -10, 0, 0, 30])
+            sphericalManipulator.plot(traj1.s, limits = [-5, 30, -10, 10, 0, 30])
+            sphericalManipulator.plot(traj2.s, limits = [-5, 30, -10, 10, 0, 30])
+            sphericalManipulator.plot(traj3.s, limits = [-5, 30, -10, 10, 0, 30])
+            sphericalManipulator.plot(traj4.s, limits = [-5, 30, -10, 10, 0, 30])
+            sphericalManipulator.plot(traj5.s, limits = [-5, 30, -10, 10, 0, 30])
+            sphericalManipulator.plot(traj6.s, limits = [-5, 30, -10, 10, 0, 30])
             
     def invKins(self, a1, a2, a3,  x_03, y_03, z_03):
         s = z_03 - a1
