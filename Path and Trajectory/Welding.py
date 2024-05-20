@@ -20,11 +20,6 @@ sphericalManipulator = SerialLink([H01, H12, H23])
 
 print(sphericalManipulator)
 
-def defineJoints():
-    theta_1 = float(input("Revolute Joint 1 [deg]>>>"))
-    theta_2 = float(input("Revolute Joint 2 [deg]>>>"))
-    d_3 = float(input("Prismatic Joint 3 [mm]>>>"))
-    return theta_1, theta_2, d_3
 
 def invKins(a1, x_03, y_03, z_03):
     s = z_03 - a1
