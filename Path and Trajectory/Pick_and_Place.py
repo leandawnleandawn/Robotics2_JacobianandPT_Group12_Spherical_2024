@@ -40,8 +40,8 @@ def convert_to_meters(mm):
 def convert_to_radians(deg):
     return deg * (np.pi/180)
 
-conveyor_beltT1, conveyor_beltT2, conveyor_beltd3 = invKins(a1, 10, 0, 3)
-box1T1, box1T2, box1d3 = invKins(a1, -5*np.sin(np.pi/4), -5*np.cos(np.pi/4), 2)
+conveyor_beltT1, conveyor_beltT2, conveyor_beltd3 = invKins(a1, 33, 0, 10)
+box1T1, box1T2, box1d3 = invKins(a1, 25, 20, 0)
 
 conveyor_beltT1 = convert_to_radians(conveyor_beltT1)
 conveyor_beltT2 = convert_to_radians(conveyor_beltT2)
@@ -62,7 +62,7 @@ traj4 = rtb.jtraj(q2, q0, t)
 print(traj1)
 
 while True:
-    sphericalManipulator.plot(traj1.s, limits = [-5, 30, -10, 10, 0, 30])
-    sphericalManipulator.plot(traj2.s, limits = [-5, 30, -10, 10, 0, 30])
-    sphericalManipulator.plot(traj3.s, limits = [-5, 30, -10, 10, 0, 30])
-    sphericalManipulator.plot(traj4.s, limits = [-5, 30, -10, 10, 0, 30])
+    sphericalManipulator.plot(traj1.s, limits = [-5, 30, 0, 25, 0, 30])
+    sphericalManipulator.plot(traj2.s, limits = [-5, 30, 0, 25, 0, 30])
+    sphericalManipulator.plot(traj3.s, limits = [-5, 30, 0, 25, 0, 30])
+    sphericalManipulator.plot(traj4.s, limits = [-5, 30, 0, 25, 0, 30])
