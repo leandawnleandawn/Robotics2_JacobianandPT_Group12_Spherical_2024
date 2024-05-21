@@ -1,7 +1,13 @@
 # Final Project: Path and Trajectory Planning
 
 ## Abstract
+This paper delves into advanced kinematic analysis of robotic manipulators, extending from foundational forward and inverse kinematics to include velocity and acceleration considerations. Utilizing the Denavit-Hartenberg notation for homogeneous transformation matrices, the study transitions to differential kinematics through the Jacobian matrix, following the methodologies outlined by Spong et al. (1989) and Corke (2023). The Jacobian matrix, a pivotal element in robotic motion, is employed for singularity analysis, inverse velocity kinematics, and force/torque computation.
 
+For prismatic and revolute joints, specific Jacobian formulations are derived, illustrating the manipulator's response to translational and rotational movements. The study emphasizes the importance of identifying singular configurations where the determinant of the Jacobian matrix approaches zero, leading to potential joint function loss. The inverse Jacobian method is presented as a solution for deducing joint velocities from end-effector velocities.
+
+Additionally, the research integrates static force and torque analysis using the Jacobian transpose, as per Craig (2005), and explores path and trajectory planning within the manipulator’s configuration space. The trajectory planning employs quintic polynomial generation for smooth motion transitions, as implemented in Corke's Robotics Toolbox for Python. This comprehensive approach is showcased through applications such as pick-and-place and welding tasks, underscoring the practical implications of the theoretical models.
+
+In summary, this paper provides a thorough exploration of kinematic principles, Jacobian-based analyses, and trajectory planning techniques essential for advanced robotic manipulator control.
 ## Introduction of the Project
 
   After the following use of Forward and Inverse Kinematics of a given Manipulator, we expand our horizons by
