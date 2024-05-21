@@ -46,7 +46,7 @@ In summary, this paper provides a thorough exploration of kinematic principles, 
 ### Case 1 : Prismatic Joint
  In Spong (1989) emphasized, a prismatic joint only moves on the translation axis of the end effector. With this case it can be written as:
 
- ![image](https://github.com/leandawnleandawn/Robotics2_JacobianandPT_Group12_Spherical_2024/assets/83767299/753c6c4e-7e22-4da8-bcf0-e8853dea2d43)\
+![image](https://github.com/leandawnleandawn/Robotics2_JacobianandPT_Group12_Spherical_2024/assets/83767299/753c6c4e-7e22-4da8-bcf0-e8853dea2d43)\
 ![image](https://github.com/leandawnleandawn/Robotics2_JacobianandPT_Group12_Spherical_2024/assets/83767299/bc45caad-b0f1-453d-b495-756fb85c9d0c)\
 ![image](https://github.com/leandawnleandawn/Robotics2_JacobianandPT_Group12_Spherical_2024/assets/83767299/a5e70e62-0bba-4808-b8a6-92ca9fcd0618)\
 ![image](https://github.com/leandawnleandawn/Robotics2_JacobianandPT_Group12_Spherical_2024/assets/83767299/846121eb-fccc-41e3-a6c1-d69c82e739c9)
@@ -86,6 +86,7 @@ Via straightforward computation by Spong et. al. (1989). The Revolute Joint is t
 
 In this video, the proponents tackled the following Jacobian Matrix given itself. 
 
+https://youtu.be/unkfjQ3Yru0
 
 ## Differential Equation of Spherical Manipulator
 
@@ -95,7 +96,6 @@ Based on the Corke (2023) equation:
   It can be expanded into:
 
   ![image](https://github.com/leandawnleandawn/Robotics2_JacobianandPT_Group12_Spherical_2024/assets/83767299/cdef6f3b-523a-47e4-948e-050346116a99)\
-
   ![image](https://github.com/leandawnleandawn/Robotics2_JacobianandPT_Group12_Spherical_2024/assets/83767299/8487a8b6-b0b6-4799-9149-a4f6f11c8dc0)
 
   It can generate the following Differential Equation as Following:
@@ -103,7 +103,7 @@ Based on the Corke (2023) equation:
   ![image](https://github.com/leandawnleandawn/Robotics2_JacobianandPT_Group12_Spherical_2024/assets/83767299/756e7fd4-85c8-4441-923b-df8edb17a1c2)
 
   This Video explores how the following Jaocbian Matrix can be interpreted as the Differential Equation of the manipulator
-  
+  https://youtu.be/luZDC5-jyU4
 
 ## (Additional) Robot Singularities and Inverse Jaocbian
 
@@ -122,7 +122,8 @@ Based on the Corke (2023) equation:
 
   If the Singularity doesn't exist, then the Robot can move at those positions.
 
-
+  https://youtu.be/f6UTNsWzKKs
+  
   In Inverse Jacobian, it is equivalent on Inverse Kinematics wherein the given end effector velocities gave the differential equations of the joint variable velocitie of 
   given manipulator or:
 
@@ -186,7 +187,9 @@ Then in Three Dimensional Motion, there are Matrix Algebra that is involved that
 
 This Repository highlights how the Pick and Place and Welding of a Rectangular Prism is planned. 
 
+https://youtu.be/wf7YdSAOV9I
 
+https://youtu.be/-abcUi-rEb8
 
 ## References
 
