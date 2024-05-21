@@ -30,7 +30,8 @@ In summary, this paper provides a thorough exploration of kinematic principles, 
 
   The proponents of this repository proposed to create a Graphical User Interface of on Integrating the Forward, Inverse, Differential Kinematics and its Path and Trajectory
   Planning. 
-  
+
+  See the Videos in think link !(https://drive.google.com/drive/folders/1wspBRYThWumMzWpJt8KFcOQs7sqLZLxq)
 
 ## Jacobian Matrix of Spherical Manipulator
 
