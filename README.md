@@ -86,7 +86,8 @@ Via straightforward computation by Spong et. al. (1989). The Revolute Joint is t
 
 In this video, the proponents tackled the following Jacobian Matrix given itself. 
 
-https://youtu.be/unkfjQ3Yru0
+[![Jacobian](https://img.youtube.com/vi/unkfjQ3Yru0/0.jpg)](https://youtu.be/unkfjQ3Yru0)
+
 
 ## Differential Equation of Spherical Manipulator
 
@@ -103,7 +104,7 @@ Based on the Corke (2023) equation:
   ![image](https://github.com/leandawnleandawn/Robotics2_JacobianandPT_Group12_Spherical_2024/assets/83767299/756e7fd4-85c8-4441-923b-df8edb17a1c2)
 
   This Video explores how the following Jaocbian Matrix can be interpreted as the Differential Equation of the manipulator
-  https://youtu.be/luZDC5-jyU4
+  [![DE](https://img.youtube.com/vi/luZDC5-jyU4/0.jpg)](https://youtu.be/luZDC5-jyU4)
 
 ## (Additional) Robot Singularities and Inverse Jaocbian
 
@@ -122,7 +123,7 @@ Based on the Corke (2023) equation:
 
   If the Singularity doesn't exist, then the Robot can move at those positions.
 
-  https://youtu.be/f6UTNsWzKKs
+  [![Singularity](https://img.youtube.com/vi/f6UTNsWzKKs/0.jpg)](https://youtu.be/f6UTNsWzKKs)
   
   In Inverse Jacobian, it is equivalent on Inverse Kinematics wherein the given end effector velocities gave the differential equations of the joint variable velocitie of 
   given manipulator or:
@@ -187,9 +188,9 @@ Then in Three Dimensional Motion, there are Matrix Algebra that is involved that
 
 This Repository highlights how the Pick and Place and Welding of a Rectangular Prism is planned. 
 
-https://youtu.be/wf7YdSAOV9I
+[![PTMATLABPYTHON](https://img.youtube.com/vi/wf7YdSAOV9I/0.jpg)](https://youtu.be/wf7YdSAOV9I)
 
-https://youtu.be/-abcUi-rEb8
+[![PTGUI](https://img.youtube.com/vi/-abcUi-rEb8/0.jpg)](https://youtu.be/-abcUi-rEb8)
 
 ## References
 
