@@ -125,11 +125,64 @@ Based on the Corke (2023) equation:
   
 ## (Additional) Torques and Forces Analysis
 
+In Statically Analysis of the Manipulator, the Torques and Forces are applied what initial staart fo the manipulator, if the following manipulator is not moving. Craig (2005) defined 
+it as a equation:
+
+$$F \cdot \delta \chi = \tau \cdot \delta \Theta$$
+
+When Simplified, we get the following equation:
+
+$$\tau = ^{0}J^{T}F$$
+
+This means that the following manipulator in a weightless link lengths environment is has the Jacobian with respect to the world frames in a transposed position.
 
 ## Path and Trajectory Planning of Spherical Manipulator
+
+Once a Differential Kinematics is defined we can be able to how can we plan the path and trajectory planning of the manipulator based on the manipulator given.
+Since a given manipulator has a constant link length and limited joint values (in real life). Now if we plot the following manipulator in its environment in every
+combination of the joint values, we have created the Configuration Space. In this case this figure:
+
+![image](https://github.com/leandawnleandawn/Robotics2_JacobianandPT_Group12_Spherical_2024/assets/83767299/c38061f1-4816-47c6-b3f9-a750cbf7ed97)
+
+The region created from all the combinations of the joint values defines where the points of the objects, must be acquired by the end effector itself.
+
+Robotics Toolbox for Python by Peter Corke uses a quintic polynomial generation wherein the initial velocity and iniitial acceleration of the end effector is zero
+We can define the equation as
+
+$$ x(s) = a_0 + a_1s + a_2s^2 + a_3s^3 + a_4s^4 + a_5s^5$$
+
+Getting the derivative of the generator trajectory we can able to get the equation 
+
+$$ \frac{dx}{ds} = a_1 + 2a_2s + 3a_3s^2 + 4a_4s^3 + 5a_5s^4$$
+
+And its second derivative
+
+$$ \frac{d^2x}{ds^2} = 2a_2 + 6a_3s + 12a_4s^2 + 20a_5s^3$$
+
+Take note that, initial position of trajectory is zero or
+
+$$a_0 = 0$$
+
+and, initial velocity is zero or
+$$\frac{dx}{dt}  = a_1$$
+$$v_i = a_1 = 0$$
+
+and initial acceleration is zero
+$$\frac{dx}{dt}  = 2a_2$$
+$$v_i = 2a_2 = 0$$
+
+By this method, we can gather the state space representation of the system as a matrix under $a_3$, $a_4$, and $$a_5$$
+
+![image](https://github.com/leandawnleandawn/Robotics2_JacobianandPT_Group12_Spherical_2024/assets/83767299/594f55de-47fc-4663-ad15-a47a49f3a077)
+
+Then in Three Dimensional Motion, there are Matrix Algebra that is involved that is not tackled within this repository
+
+This Repository highlights how the Pick and Place and Welding of a Rectangular Prism is planned. 
+
 
 
 ## References
 
 Spong, M. W., Hutchinson, S., & Vidyasagar, M. (2005). Robot modeling and control. John Wiley & Sons.
 Corke, P. (2023). Robotics, vision and control: Fundamental Algorithms in Python. Springer.
+Craig, J. J. (2005). Introduction to robotics: Mechanics and Control. Addison-Wesley Longman.
